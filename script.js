@@ -5,7 +5,7 @@
 
 let pinInput = "";
 
-const password = "000000";
+const password = "140906";
 
 
 
