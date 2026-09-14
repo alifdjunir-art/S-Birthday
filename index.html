@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Surprise</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- DEKORASI BUNGA -->
+
+<div class="flower flower1">🌸</div>
+<div class="flower flower2">🌼</div>
+<div class="flower flower3">🌷</div>
+<div class="flower flower4">🌸</div>
+
+
+
+<!-- =========================
+     OPENING
+========================= -->
+
+
+<section id="opening" class="page">
+
+
+<div class="main-card">
+
+
+<div class="photo-frame">
+
+<img src="assets/foto0.PNG">
+
+</div>
+
+
+
+<h1>
+Happy Birthday <br>
+    Salmaa Ameng Puteri🥳
+</h1>
+
+
+
+<p class="opening-big">
+
+Selamat ulang tahun yaa, hehe
+
+Maaf kalo gw gak ngucapin dari WA atau langsung nanti.
+
+</p>
+
+
+
+<p class="opening-small">
+
+Sok diikutin alurnya hehe,
+yaa semoga <br> suka sama salah satu hadiah dari ku.
+
+</p>
+
+
+
+<button onclick="openPin()">
+
+Lanjut →
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+     PIN PAGE
+========================= -->
+
+
+<section id="pinPage" class="page hidden">
+
+
+<div class="main-card pin-card">
+
+
+<h1>
+Masukkan Sandi 🔒
+</h1>
+
+
+<p>
+Eits, Jawab dulu dongg
+</p>
+
+
+
+
+<div class="pin-display">
+
+<div class="pin-item"></div>
+<div class="pin-item"></div>
+<div class="pin-item"></div>
+<div class="pin-item"></div>
+<div class="pin-item"></div>
+<div class="pin-item"></div>
+
+
+</div>
+
+
+
+
+
+<div class="number-pad">
+
+
+<button onclick="addNumber(1)">1</button>
+<button onclick="addNumber(2)">2</button>
+<button onclick="addNumber(3)">3</button>
+
+
+<button onclick="addNumber(4)">4</button>
+<button onclick="addNumber(5)">5</button>
+<button onclick="addNumber(6)">6</button>
+
+
+<button onclick="addNumber(7)">7</button>
+<button onclick="addNumber(8)">8</button>
+<button onclick="addNumber(9)">9</button>
+
+
+<button class="empty"></button>
+
+<button onclick="addNumber(0)">
+0
+</button>
+
+
+<button onclick="deleteNumber()">
+⌫
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     UCAPAN SLIDE
+========================= -->
+
+
+<section id="messagePage" class="page hidden">
+
+
+<div class="slider">
+
+
+
+
+
+<div class="message-slide">
+
+
+<div class="main-card">
+
+
+<div class="photo-frame">
+
+<img src="assets/foto1.jpeg">
+
+</div>
+
+
+
+<div class="message-text">
+
+<p>
+
+Haloo Ameng, ciee ngikut-ngikut lu kepala 
+dua juga, wkwk. Habede yaa, maaf gw  
+tidak pandai buat kata-kata. <br>
+Tapi, yaa semoga semua hal yang lu inginkan  
+terwujud yaa, semoga sehat selalu
+gak stres karena apapun lah, semoga semoga deh, gatau lagi hehe😃
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="message-slide">
+
+
+<div class="main-card">
+
+
+<div class="photo-frame">
+
+<img src="assets/foto2.jpeg">
+
+</div>
+
+
+<div class="message-text">
+
+<p>
+
+Terima kasih meng, udah jadi temen gw dari awal-awal masuk kuliah,
+Terima kasih juga udah sering perhatian, ntah itu nanyain gw udah sarapan atau belum,
+sampe nanyain gw udh minum obat atau belum kalo lagi keliatan sakit😃 
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="message-slide">
+
+
+<div class="main-card">
+
+
+<div class="photo-frame">
+
+<img src="assets/foto3.HEIC">
+
+</div>
+
+<div class="message-text">
+
+<p>
+
+Maaf kalau saat lu nanya-nanya gitu respon gw gak jelas atau membuat lu trauma/males nanya-nanya lagi,
+semoga lu masih tetep gitu ya, soalnya klo engga lu, siapa lagi kan😃
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="message-slide">
+
+
+<div class="main-card">
+
+
+<div class="photo-frame">
+
+<img src="assets/foto4.HEIC">
+
+</div>
+
+
+<div class="message-text">
+
+<p>
+
+Maaf kalau nanti ada rame-rame ngucapin HBD ke lu gw gak ikut, 
+wkwk siapa juga ya gw harus ikut, kan ga ngaruh juga buat lu <br>
+Tapi ya gw ngerasa harus gantian aja, sebelumnya lu udh ngasih gw donat,
+gw juga mau ngasih sesuatu.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="message-slide">
+
+
+<div class="main-card">
+
+
+<div class="photo-frame">
+
+<img src="assets/foto5.HEIC">
+
+</div>
+
+<div class="message-text">
+
+<p>
+
+Padahal hari ini masuk sore ya wkwk, bisa tuh gw dari pagi/siang beli dulu,
+tapi ntah lah, rasanya gw males ngasih pas rame-rame di hari esok <br>
+Next aja ya gw kasih langsung atau gw titipin ke orang lain aja😃
+
+</p>
+
+</div>
+
+<button onclick="openFinal()">
+
+Iya Gapapa
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     HALAMAN AKHIR
+========================= -->
+
+
+<section id="finalPage" class="page hidden">
+
+
+<div class="main-card">
+
+
+<div class="photo-frame">
+
+<img src="assets/fototerakhir.PNG">
+
+</div>
+
+
+
+<h1>
+Last hehe😃
+</h1>
+
+
+<input
+id="visitorHadiah"
+placeholder="Mau Hadiah Apa"
+>
+
+<textarea
+id="visitorMessage"
+placeholder="Tulis pesan kamu..."
+></textarea>
+
+<div class="message-note">
+
+*Ohya tolong isi yaa pesan buat gw, ini sekalian gw belajar hal baru di codingan ini, hehe
+
+</div>
+
+<br>
+
+<button onclick="sendMessage()">
+
+Kirim
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     POPUP HINT
+========================= -->
+
+
+<div id="hintPopup" class="popup hidden">
+
+
+<div class="popup-card">
+
+
+<div class="photo-frame">
+
+
+<img src="assets/pinsalah.PNG">
+
+
+</div>
+
+
+
+<h2>
+Yah salah 😭
+</h2>
+
+
+<p>
+
+Coba ingat lagi sandinya.
+
+<br><br>
+
+
+Hint:
+
+Tanggal spesial luu
+
+
+<br>
+
+
+Tau kann? masa gak tau,
+
+<strong>
+kocak
+</strong>
+
+
+</p>
+
+<br><br>
+
+<button onclick="closeHint()">
+
+Coba Lagi
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+<!-- =========================
+     POPUP LAST
+========================= -->
+<div id="successPopup" class="popup hidden">
+
+<div class="popup-card">
+
+
+<h2>
+Berhasil wkwk
+</h2>
+
+
+<p>
+Pesan kamu sudah terkirim.
+Terima kasih sudah mengisi.
+</p>
+
+<br>
+
+<button onclick="closeSuccess()">
+Oke
+</button>
+
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

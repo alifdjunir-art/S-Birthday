@@ -1,0 +1,939 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", Arial, sans-serif;
+}
+
+
+body{
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    color:#35546b;
+
+    background:
+
+    radial-gradient(
+        circle at top left,
+        #bfe8ff,
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        #d7f3ff,
+        transparent 35%
+    ),
+
+    linear-gradient(
+        135deg,
+        #ffffff,
+        #eaf7ff
+    );
+
+}
+
+
+
+/* =========================
+   PAGE DASAR
+========================= */
+
+
+.page{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+
+
+/* =========================
+   BUNGA DEKORASI
+========================= */
+
+
+.flower{
+
+    position:fixed;
+
+    font-size:45px;
+
+    opacity:.5;
+
+    animation:
+    floatFlower 5s ease-in-out infinite;
+
+}
+
+
+
+.flower1{
+
+    top:40px;
+    left:40px;
+
+}
+
+
+.flower2{
+
+    top:80px;
+    right:50px;
+
+    animation-delay:1s;
+
+}
+
+
+.flower3{
+
+    bottom:60px;
+    left:60px;
+
+    animation-delay:2s;
+
+}
+
+
+.flower4{
+
+    bottom:50px;
+    right:40px;
+
+    animation-delay:3s;
+
+}
+
+
+
+@keyframes floatFlower{
+
+    0%,100%{
+
+        transform:
+        translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:
+        translateY(-15px);
+
+    }
+
+}
+
+
+
+
+
+/* =========================
+   CARD UTAMA
+========================= */
+
+
+.main-card{
+
+    width:min(90%,430px);
+
+    min-height:520px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:35px 30px;
+
+    text-align:center;
+
+    border-radius:38px;
+
+    background:
+    rgba(255,255,255,.78);
+
+    backdrop-filter:blur(20px);
+
+    border:
+    2px solid rgba(255,255,255,.9);
+
+    box-shadow:
+    0 25px 60px
+    rgba(0,120,200,.18);
+
+}
+
+
+@keyframes cardAppear{
+
+
+from{
+
+    opacity:0;
+
+    transform:
+    translateY(30px)
+    scale(.95);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:
+    translateY(0)
+    scale(1);
+
+}
+
+
+}
+
+
+
+
+
+/* =========================
+   FRAME FOTO
+========================= */
+
+
+.photo-frame{
+
+
+    width:170px;
+
+    height:210px;
+
+
+    padding:10px;
+
+
+    margin:
+
+    10px auto 20px;
+
+
+    border-radius:30px;
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #ffffff,
+        #d7f1ff
+    );
+
+
+    box-shadow:
+
+
+    0 15px 35px
+
+    rgba(0,120,200,.2);
+
+
+
+}
+
+
+
+.photo-frame img{
+
+
+    width:100%;
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    border-radius:23px;
+
+
+}
+
+
+
+.message-slide{
+
+    min-width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    scroll-snap-align:center;
+
+}
+
+
+
+/* =========================
+   TEXT
+========================= */
+
+
+h1,h2{
+
+
+    color:#1674c8;
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+h1{
+
+    font-size:25px;
+
+}
+
+
+
+.opening-big{
+
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.opening-small{
+
+
+    font-size:14px;
+
+    color:#6c8496;
+
+    line-height:1.5;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+button{
+
+
+    border:none;
+
+
+    padding:13px 35px;
+
+
+    border-radius:50px;
+
+
+    cursor:pointer;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    font-weight:bold;
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        #1475ca,
+        #6bcaff
+    );
+
+
+    box-shadow:
+
+
+    0 10px 25px
+
+    rgba(0,110,200,.25);
+
+
+
+    transition:.3s;
+
+
+}
+
+
+
+button:hover{
+
+
+    transform:
+
+    translateY(-3px);
+
+
+}
+
+
+
+
+
+/* =========================
+   INPUT
+========================= */
+
+
+input{
+
+
+    width:100%;
+
+
+    padding:10px;
+
+
+    margin:7px 0;
+
+
+    border-radius:18px;
+
+
+    border:
+
+    2px solid #bfe4ff;
+
+
+    outline:none;
+
+
+    background:white;
+
+
+}
+
+
+textarea {
+
+    width:100%;
+
+
+    padding:10px;
+
+
+    margin:7px 0;
+
+
+    border-radius:18px;
+
+
+    border:
+
+    2px solid #bfe4ff;
+
+
+    outline:none;
+
+
+    background:white;
+    
+}
+
+.message-note{
+
+    font-size:12px;
+
+}
+
+
+
+/* =========================
+   PIN
+========================= */
+
+
+.pin-display{
+
+
+    display:flex;
+
+    justify-content:center;
+
+
+    gap:8px;
+
+
+    margin:25px 0;
+
+
+}
+
+
+
+.pin-item{
+
+
+    width:40px;
+
+    height:50px;
+
+
+    border-radius:12px;
+
+
+    border:
+
+    2px solid #91d1ff;
+
+
+    background:white;
+
+
+}
+
+
+
+.pin-item.active{
+
+
+    background:#1674c8;
+
+
+}
+
+
+
+
+
+.number-pad{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,70px);
+
+
+    justify-content:center;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.number-pad button{
+
+
+    width:70px;
+
+    height:70px;
+
+
+    padding:0;
+
+
+    border-radius:50%;
+
+
+    background:#e7f6ff;
+
+
+    color:#1674c8;
+
+
+    box-shadow:none;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+.number-pad button:hover{
+
+
+    background:#1674c8;
+
+    color:white;
+
+
+}
+
+
+
+.empty{
+
+    visibility:hidden;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   SLIDE UCAPAN
+========================= */
+
+
+.slider{
+
+
+    display:flex;
+
+
+    width:100%;
+
+    height:100%;
+
+
+    overflow-x:auto;
+
+
+    scroll-snap-type:x mandatory;
+
+
+    scroll-behavior:smooth;
+
+
+}
+
+
+
+.slider::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+
+
+.message-slide{
+
+
+    min-width:100%;
+
+
+    height:100%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    scroll-snap-align:center;
+
+
+}
+
+.message-text{
+
+    flex:1;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    width:100%;
+
+
+    padding:20px 0;
+
+
+}
+
+
+
+.message-text p{
+
+    font-size:19px;
+
+    line-height:1.5;
+
+    color:#1f66a0;
+
+}
+
+.main-card button{
+
+    margin-top:auto;
+
+}
+
+
+
+@keyframes slideCard{
+
+
+from{
+
+
+    opacity:0;
+
+    transform:
+
+    translateX(80px)
+    scale(.9);
+
+
+}
+
+
+to{
+
+
+    opacity:1;
+
+    transform:
+
+    translateX(0)
+    scale(1);
+
+
+}
+
+
+}
+
+
+
+
+
+/* =========================
+   POPUP HINT
+========================= */
+
+
+.popup{
+
+
+    position:fixed;
+
+    inset:0;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    background:
+
+    rgba(0,0,0,.35);
+
+
+    z-index:10;
+
+
+}
+
+
+
+.popup-card{
+
+
+    width:90%;
+
+    max-width:380px;
+
+
+    padding:30px;
+
+
+    text-align:center;
+
+
+    background:white;
+
+
+    border-radius:35px;
+
+
+    box-shadow:
+
+    0 25px 60px
+
+    rgba(0,0,0,.2);
+
+
+    animation:
+
+    popupIn .4s ease;
+
+
+}
+
+
+
+@keyframes popupIn{
+
+
+from{
+
+    transform:
+    scale(.7);
+
+    opacity:0;
+
+}
+
+
+to{
+
+    transform:
+    scale(1);
+
+    opacity:1;
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+h1{
+
+    font-size:32px;
+
+}
+
+
+.main-card{
+
+    padding:30px 20px;
+
+}
+
+
+
+.number-pad{
+
+    grid-template-columns:
+
+    repeat(3,60px);
+
+}
+
+
+.number-pad button{
+
+    width:60px;
+
+    height:60px;
+
+}
+
+
+
+}
+
+#finalPage .main-card{
+
+    justify-content:flex-start;
+
+}
+
+
+#finalPage .photo-frame{
+
+    margin-bottom:15px;
+
+}
+
+
+#finalPage h1{
+
+    margin-bottom:15px;
+
+}
+
+
+#finalPage button{
+
+    margin-top:15px;
+
+}
+
+
+.message-note{
+
+    margin-top:10px;
+
+    font-size:13px;
+
+    line-height:1.4;
+
+    color:#55758c;
+
+}
